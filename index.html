@@ -64,7 +64,7 @@
       text-align: center;
       padding: 40px 20px;
       background:
-        radial-gradient(circle at center, #24283a 0%, #090b12 65%);
+        radial-gradient(circle at center, #1b1f35 0%, #090b12 60%);
     }
 
     .hero h2 {
@@ -123,37 +123,122 @@
       border-radius: 12px;
       padding: 25px;
       transition: 0.2s;
-    }
+   .card:hover {
+  transform: translateY(-5px);
+  border-color: #ff4655;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: #ff4655;
-    }
+.card h3 {
+  margin-bottom: 10px;
+  color: #ff4655;
+}
 
-    .card h3 {
-      margin-bottom: 10px;
-      color: #ff4655;
-    }
+.card p {
+  color: #aeb5c7;
+}
 
-    .card p {
-      color: #aeb5c7;
-    }
+.mystery {
+  text-align: center;
+  background: #111522;
+  border-radius: 15px;
+  padding: 40px 20px;
+}
 
-    .mystery {
-      text-align: center;
-      background: #111522;
-      border-radius: 15px;
-      padding: 40px 20px;
-    }
+.mystery p {
+  color: #b9bfd0;
+  margin-bottom: 20px;
+}
 
-    .mystery p {
-      color: #b9bfd0;
-      margin-bottom: 20px;
-    }
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #777f94;
+  border-top: 1px solid #292e40;
+  background: #080a10;
+}
 
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #777f94;
-      border-top: 1px solid #292e40;
-      background: #080a
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav a {
+    font-size: 12px;
+    margin: 0 4px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>IMPOSTERS AMONG US</h1>
+  <p>Trust no one.</p>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#story">Story</a>
+    <a href="#characters">Characters</a>
+    <a href="#updates">Updates</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <h2>Everyone has a secret.<br><span>Someone is lying.</span></h2>
+  <p>Welcome to the official website of <strong>Imposters Among Us</strong>. Enter a world where nobody can be trusted.</p>
+  <a class="button" href="#story">Enter the Story</a>
+</section>
+
+<section id="story">
+  <h2>The Story</h2>
+  <div class="mystery">
+    <p>Something is wrong. People are disappearing, secrets are being hidden, and an imposter may be closer than anyone realizes.</p>
+    <p>The question is simple: <strong>Who can you trust?</strong></p>
+  </div>
+</section>
+
+<section id="characters">
+  <h2>Characters</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>???</h3>
+      <p>A mysterious character whose true identity remains hidden.</p>
+    </div>
+
+    <div class="card">
+      <h3>???</h3>
+      <p>Friend or enemy? Nobody knows what they are really planning.</p>
+    </div>
+
+    <div class="card">
+      <h3>???</h3>
+      <p>Someone knows the truth... but are they willing to reveal it?</p>
+    </div>
+  </div>
+</section>
+
+<section id="updates">
+  <h2>Latest Updates</h2>
+  <div class="mystery">
+    <p>The website has officially launched.</p>
+    <p>More characters, chapters, artwork and secrets are coming soon.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Imposters Among Us</p>
+  <p>Created by Nilaj.</p>
+</footer>
+
+</body>
+</html>
